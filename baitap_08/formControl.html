@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form controls</title>
+</head>
+
+<body>
+    <form action="!" method="get">
+        <!-- Text input -->
+        <p>Tên đăng nhập:<input type="text" name="txtName" size="15" minlength="2" maxlength="50" /></p>
+        <p>Mật khẩu:<input type="password" name="txtPassword" size="15" minlength="2" maxlength="50" /></p>
+        <p>Nhập câu hỏi gợi nhớ mật khẩu:
+            <!--
+            cols ỏ trong textarea là tăng độ rộng
+            rows ở trong textarea là tăng độ cao
+            -->
+            <textarea name="txtRemind" id="" cols="50" rows="5">Nội dung:</textarea>
+        </p>
+        <p>
+            Gender:
+            <!-- 
+            checked là default, không muốn người dùng bỏ chống
+            Có hơn 1 checked thì cái cuối cùng sẽ được thực thi
+            -->
+            <input type="radio" name="txtGender" id="female" value="f" checked>
+            <label for="female">Female</label>
+            <input type="radio" name="txtGender" id="male" value="m">
+            <label for="male">male</label>
+        </p>
+
+        <p>
+        <fieldset>
+            <legend>Favorite:</legend>
+            <!--
+            checked cũng có thể được sử dụng ở đây
+            -->
+            <P>
+                <input type="checkbox" name="favorite" id="music" value="music" />
+                <label for="music">Music</label>
+            </P>
+            <P>
+                <input type="checkbox" name="favorite" id="sport" value="sport" />
+                <label for="sport">Sports</label>
+            </P>
+        </fieldset>
+        </p>
+        <p>
+            <fieldset>
+            Thiết bị sử dụng
+            <!--
+            Selected là default
+            -->
+            <select name="thietbi">
+                <option></option>
+                <option value="laptop">Laptop</option>
+                <option value="pc">PC</option>
+                <option value="tablet" selected>Tablet</option>
+            </select>
+            
+        </p>
+        <p>
+            Thiết bị sử dụng (chọn nhiều)
+            <!--
+            size là 1 lúc nó sẽ hiện n, có thể kéo lên kéo xuống để xem
+            -->
+            <select name="thietbi2" multiple size="4">
+                <option></option>
+                <option value="laptop">Laptop</option>
+                <option value="pc">PC</option>
+                <option value="tablet" selected>Tablet</option>
+                <option value="smartPhone">Địne thoại thông minh</option>
+            </select>
+        </p>
+        </fieldset>
+        <p>
+            CV:
+            <input type="file" name="txtFile" id="" />
+        </p>
+        <input type="button" value="Click me">
+        <input type="reset" value="Rest">
+        <input type="submit" name="btAction" value="Send" />
+        <p>
+            <input width="50" height="50" type="image"
+                src="Justicon-Free-Simple-Line-Bitcoin-Finance-Bank-Payment-Money.512.png" name="btAction" value="Send">
+        </p>
+    </form>
+</body>
+
+</html>
