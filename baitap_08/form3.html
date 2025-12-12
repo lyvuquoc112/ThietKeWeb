@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <form action="contact.php" method="post">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td bgcolor="yellow">
+                        <h1>Contact us</h1>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="txtName" placeholder="Enter Name" minlength="10" maxlength="500" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="txtEmail" id="" placeholder="Enter Email" required />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" name="txtPhone" id="" placeholder="Enter Phone Number" required maxlength="11"
+                            minlength="10" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="number" name="txtAge" id="" placeholder="Enter Age" min="1" max="120" step="1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="txtMessage" id="" placeholder="Message"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <input type="submit" value="Send" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
