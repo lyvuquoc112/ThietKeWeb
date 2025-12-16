@@ -1,0 +1,65 @@
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+i{
+    color: green;
+}
+i{
+    color: red;
+}
+b{
+    color: pink;
+}
+p b{
+    color: blue !important;
+}
+p b{
+    color: violet;
+}
+p#intro{
+    font-size: 100%;
+}
+p{
+    font-size: 75%;
+} */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+i{
+    color: green;
+}
+
+i{
+    color: red;
+}
+p{
+    color: pink;
+}
+
+p b {
+    color: blue !important;
+}
+
+p b {
+    color: gold;
+}
+
+li>a{
+    color: brown;
+}
+
+#decuong{
+    color: aqua;
+    font-size: larger;
+}
+.noidung{
+    color: purple;
+    font-size: medium;
+}
