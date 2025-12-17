@@ -1,0 +1,60 @@
+body {
+    padding: 20px;
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    color: #0088d0;
+    margin: 0px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    text-shadow: 1px 3px 4px gray;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    word-spacing: 0.2em;
+}
+
+h3 {
+    font-size: 1.5em;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+    color: black;
+}
+p.intro::first-line{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+a{
+    text-decoration: line-through;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: greenyellow;
+}
+a:active{
+    color: green;
+}
+a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+a:focus{
+    color: red;
+}
