@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập về LIST, TABLE, FORM</title>
+    <style type="text/css">
+      body{
+        font-size: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #F6F6F6;
+        color: #444444;
+        margin: 20px;
+      }
+      li{
+        line-height: 30px;
+      }
+      table{
+        border-collapse: collapse;
+      }
+      th,td{
+        text-align: left;
+        font-size: 90%;
+        padding: 5px 20px 10px 10px;
+        border-spacing: 0px;
+        margin: 0px;
+        background-color: #e0e9f0;
+        border-top: 1px solid #f1f8fe;
+        border-bottom: 1px solid #cbd2d8;
+        border-right: 1px solid #cbd2d8;
+      }
+      tr.head th{
+        text-align: center;
+        font-size: 100%;
+        color: #fff;
+        background-color: #90b4d6;
+        border-bottom: 2px solid #547ca0;
+        border-top: 1px solid #90b4d6;
+        border-right: 1px solid #749abe;
+        letter-spacing: 0.15em;
+        text-shadow: -1px -1px 1px #666;
+      }
+      td{
+        text-shadow: 1px 1px 1px #fff;
+      }
+      tr.even th, tr.even td{
+        background-color: #e8eff5;
+      }
+      tr.head th:first-child{
+        -webkit-border-top-left:20px;
+        -moz-border-radius-topleft:20px;
+        border-top-left-radius: 20px;
+      }
+      tr.head th:last-child{
+        -webkit-border-top-right:20px;
+        -moz-border-radius-topright:20px;
+        border-top-right-radius: 20px;
+      }
+      tr.even2 td:last-child{
+        -webkit-border-bottom-right:20px;
+        -moz-border-radius-bottomright:20px;
+        border-bottom-right-radius: 20px;
+      }
+      fieldset{
+        width: 310px;
+        margin-top: 30px;
+        background-color: #ffffff;
+        line-height: 1.6em;
+      }
+      legend{
+        font-style: italic;
+        color: #666666;
+      }
+      input[type="text"]{
+        width: 120px;
+        border: 1px solid #d6d6d6;
+        padding: 2px;
+        outline: none;
+        border-radius: 5px;
+      }
+       input[type="text"]:focus, input[type="text"]:hover{
+        width: 120px;
+        border: 2px solid #666;
+        background-color: #d6d6d6;
+        color: black;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      input[type="submit"]{
+        width: 120px;
+        border: 2px solid #d6d6d6;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        margin: 20px 0px;
+        box-shadow: 2px 2px 0.5px #666;
+        color: black;
+        background-color: #ffffff;
+      }
+      input[type="submit"]:hover{
+        width: 120px;
+        border: 4px solid #d6d6d6;
+        padding: 15px;
+        outline: none;
+        border-radius: 20px;
+        margin: 20px 0px;
+        box-shadow: 2px 2px 0.5px #666;
+        color: black;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+      .submit{
+        text-align: right;
+        width: 335px;
+      }
+      .title{
+        float: left;
+        clear: left;
+        width: 310px;
+      }
+      select{
+        padding: 10px;
+        width: 220px;
+        background-color: beige;
+        border: 1px solid #cbd2d8;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px #d6d6d6;
+      }
+      select:hover,
+      select:focus{
+        padding: 10px;
+        width: 220px;
+        background-color: rgba(245, 245, 220, 0.726);
+        border: 1px solid #90b4d6;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px #d6d6d6;
+        cursor: pointer;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>Các Buổi Chiếu Phim Miễn Phí</h1>
+    <p>Chúng tôi sẽ tổ chức một số buổi chiếu phim miễn phí cho cộng đồng.</p>
+    <p>Vui lòng lưu ý rằng các sự kiện sau đây miễn phí cho mọi người tham dự:</p>
+    <ul>
+        <li>Biệt Đội Siêu Anh Hùng</li>
+        <li>Cô Ba Sài Gòn</li>
+        <li>Em Chưa 18</li>
+        <li>Tiệc trăng máu</li>
+    </ul>
+    <table>
+        <tr class="head">
+            <th></th>
+            <th>New York</th>
+            <th>Chicago</th>
+            <th>San Francisco</th>
+        </tr>
+        <tr class="odd">
+            <th>Biệt Đội Siêu Anh Hùng</th>
+            <td>Thứ Bảy, 4 Tháng Hai 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 3 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 17 Tháng Ba 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even">
+            <th>Cô Ba Sài Gòn</th>
+            <td>Thứ Bảy, 7 Tháng Tư 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 5 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+            <td>Thứ Bảy, 19 Tháng Năm 2025<br />11 giờ sáng - 1 giờ chiều</td>
+        </tr>
+        <tr class="odd">
+            <th>Em Chưa 18</th>
+            <td>Thứ Bảy, 9 Tháng Sáu 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 7 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+            <td>Thứ Bảy, 21 Tháng Bảy 2025<br />11 giờ sáng - 2 giờ chiều</td>
+        </tr>
+        <tr class="even even2">
+            <th>Tiệc Trăng Máu</th>
+            <td>Thứ Bảy, 4 Tháng Tám 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 8 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+            <td>Thứ Bảy, 15 Tháng Chín 2025<br />11 giờ sáng - 4 giờ chiều</td>
+        </tr>
+    </table>
+    <form action="http://www.example.com/form.php" method="get">
+        <fieldset>
+            <legend>Đăng ký sự quan tâm của bạn</legend>
+            <p><label class="title" for="name">Tên của bạn:</label>
+                <input type="text" name="name" id="name"><br />
+                <label class="title" for="email">Email của bạn:</label>
+                <input type="text" name="email" id="email">
+            </p>
+            <p><label for="location" class="title">Rạp chiếu phim gần nhất của bạn:</label>
+                <select name="location" id="location">
+                    <option value="ny">New York</option>
+                    <option value="il">Chicago</option>
+                    <option value="ca">San Francisco</option>
+                </select>
+            </p>
+            <span class="title">Bạn có muốn nhận thông tin từ chúng tôi không?</span>
+            <label><input type="radio" name="member" value="yes" /> Có</label>
+            <label><input type="radio" name="member" value="no" /> Không</label></p>
+        </fieldset>
+        <div class="submit"><input type="submit" value="Đăng ký" /></div>
+    </form>
+</body>
+
+</html>
