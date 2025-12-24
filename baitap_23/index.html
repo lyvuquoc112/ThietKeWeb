@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML5 Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body,
+        section,
+        footer,
+        aside,
+        nav,
+        article,
+        figure,
+        figcaption {
+            display: block;
+        }
+
+        body {
+            color: #666666;
+            background-color: #f9f8f6;
+            background-image: url('images/dark-wood.jpg');
+            background-position: center center;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4em;
+            margin: 0px;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border: 2px solid #000000;
+        }
+
+        header {
+            height: 160px;
+            background-image: url('images/header.png');
+        }
+
+        h1 {
+            text-indent: -9999px;
+            /*Thục đầu dòng sang trái 900px*/
+            width: 940px;
+            height: 130px;
+            margin: 0;
+        }
+
+        nav,
+        footer {
+            clear: both;
+            color: #ffffff;
+            background-color: #aeaca8;
+        }
+
+        nav ul {
+            margin: 0px;
+            padding: 5px;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 40px;
+        }
+
+        nav li a {
+            color: #ffffff;
+
+        }
+
+        nav li a:hover,
+        nav li a.current {
+            color: #000000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: #de6581;
+        }
+
+        .courses {
+            float: left;
+            width: 65%;
+            border-right: 1px solid #000000;
+        }
+
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+
+        hgroup {
+            margin-top: 40px;
+        }
+
+        figure {
+            float: left;
+            width: 220px;
+            margin-right: 20px;
+            height: 220px;
+            padding: 5px;
+            border: 1px solid #000000;
+        }
+
+        figure img {
+            width: 220px;
+            height: 220px;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
+            font-size: 90%;
+        }
+
+        aside {
+            width: 230px;
+            float: left;
+            padding: 0 0 0 20px;
+        }
+
+        aside section a {
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #000000;
+        }
+
+        aside section a:hover {
+            color: #985d6a;
+            background-color: #efefef;
+        }
+
+        iframe {
+            width: 100%;
+            height: 150px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: bold;
+        }
+
+        h2 {
+            margin: 10px 0 5px 0;
+            padding: 0px;
+        }
+
+        h3 {
+            margin: 0px 0px 10px 0px;
+            color: #de6581
+        }
+
+        aside h2 {
+            padding: 30px 0 10px 0;
+            color: #de6581;
+        }
+
+        footer {
+            font-size: 80%;
+            padding: 7px 0 0 20px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Nightmare Kitchen</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">contract</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <a href="#">
+                <article>
+                    <figure>
+                        <img src="images/banh-xeo.png" alt="Bánh xèo">
+                        <figcaption>Bánh Xèo 3 miền</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Bánh Xèo 3 miền</h2>
+                        <h3>Thành phần: Bột xèo, thịt heo, tôm, rau sống</h3>
+                    </hgroup>
+                    <p>
+                        Đầu tiên, bạn cho bột gạo vào thau hay thố sạch, sau đó thêm nước cốt dừa, bột nghệ và trứng vịt
+                        vào rồi đánh tan đều. Tiếp tục cho thêm hành lá vào chung.
+                        <br />
+                        Thịt ba chỉ rửa sạch, thái lát mỏng. Tôm rửa sạch, cắt bỏ râu ria, đuôi. Sau đó cho thịt và tôm
+                        trộn với tiêu xay, bột ngọt và chút muối để ướp. Giá và rau sống rửa sạch để ráo. Đậu xanh cà vỏ
+                        ngâm nước ấm trong 2 tiếng, hấp chín.
+                    </p>
+                </article>
+            </a>
+            <a href="#">
+                <article>
+                    <figure>
+                        <img src="images/hu-tieu.png" alt="Hủ tiếu">
+                        <figcaption>Hủ tiếu Mỹ Tho</figcaption>
+                    </figure>
+                    <hgroup>
+                        <h2>Cách làm hủ tiếu</h2>
+                        <h3>Thời gian: 30 phút</h3>
+                    </hgroup>
+                    <p>
+                        Xương ống lợn chặt đôi để khi hầm ra vị ngọt tự nhiên, ngâm xương vào nước muối loãng rồi đem
+                        rửa sạch. Gan lợn lạng bỏ phần gân rồi khía vài đường, ngâm nước muỗi loãng hoặc sữa tươi loại
+                        bỏ bớt độc tố, rửa sạch. Tim lợn, thịt nạc cũng rửa sạch. Đun sôi nồi nước, thêm chút muối và
+                        gừng đập dập. Khi lửa hơi lăn tăn cho xương ống vào trụng để loại bỏ tạp chất, vớt ra rửa nhiều
+                        lần cho sạch. Tiếp tục trụng thịt thăn, gan, tim, thêm chút rượu trắng khử mùi, rồi đem rửa
+                        sạch. Việc sơ chế kỹ giúp cho món ăn trở nên thơm ngon. Phần thịt lợn xay ướp chút gia vị cho
+                        đậm đà.
+                    </p>
+                </article>
+            </a>
+        </section>
+        <aside>
+            <section class="popular">
+                <h2>Món ăn ngon nhất</h2>
+                <a href="#">Bún riêu</a>
+                <a href="#">Bún nắm</a>
+                <a href="#">Mì gõ</a>
+                <a href="#">Cơm sườn</a>
+            </section>
+            <section class="contact">
+                <h2>Liên hệ</h2>
+                <p><a href="mailto:contact@nightmarekitchen.com">contact@nightmarekitchen.com</a></p>
+                <p>Phone: +84 123 456 789</p>
+                <p>Thủ dầu một, tỉnh bình dương</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115200.87270648764!2d106.5745425007429!3d11.025345027008917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d17273d88fa1%3A0x4ce77ac2d75e8e4c!2zVGjhu6cgROG6p3UgTeG7mXQsIEJpbmggRHVvbmcsIFZpZXRuYW0!5e1!3m2!1sen!2s!4v1766547119532!5m2!1sen!2s"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </aside>
+        <footer>
+            &copy; 2025 Orange Company
+        </footer>
+    </div>
+</body>
+
+</html>
