@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ví dụ về JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script lang="JavaScript">
+        function xuLy() {
+            ip = document.getElementById("tenBan");
+            div = document.getElementById("content");
+            div.innerHTML = "Xin chào, " + ip.value;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Nhập vào tên của bạn:<input type="text" id="tenBan" name="txtName" value="" onkeyup="xuLy()" /></p>
+    <div id="content">Xin chào: </div>
+
+</body>
+
+</html>

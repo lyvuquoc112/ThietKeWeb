@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ví dụ về JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script lang="JavaScript">
+        function changeColorGreen() {
+            var div = document.getElementById("my_div");
+            div.style.backgroundColor = "green";
+        }
+
+        function changeColorYellow() {
+            var div = document.getElementById("my_div");
+            div.style.backgroundColor = "yellow";
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="a" /> <br />
+    <div style="background-color: yellow;" id="my_div" onmouseover="changeColorGreen()"
+        onmouseleave="changeColorYellow()">
+        Bài 1: Tạo một input-text, khi người dùng nhập tên, trang web sẽ hiển thị nội dung: “Xin chào ” + tên đã nhập.
+        <hr />
+
+        Bài 2: Viết chương trình khi người dùng nhấn nút sẽ thay đổi nội dung của đoạn trong 1 thẻ div (bằng 2 cách).
+        <hr />
+
+        Bài 3: Viết chương trình thay đổi màu nền của thẻ div khi người dùng di chuyển chuột vào khu vực nội bộ của thẻ
+        div.
+    </div>
+</body>
+
+</html>

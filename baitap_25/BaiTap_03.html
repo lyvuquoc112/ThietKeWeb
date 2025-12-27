@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ví dụ về JavaScript</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script lang="JavaScript">
+        function cong() {
+            a = document.getElementById("a");
+            b = document.getElementById("b");
+            div = document.getElementById("ket_qua");
+            div.value = parseFloat(a.value) + parseFloat(b.value);
+        }
+        function tru() {
+            a = document.getElementById("a");
+            b = document.getElementById("b");
+            div = document.getElementById("ket_qua");
+            div.value = parseFloat(a.value) - parseFloat(b.value);
+        }
+        function nhan() {
+            a = document.getElementById("a");
+            b = document.getElementById("b");
+            div = document.getElementById("ket_qua");
+            div.value = parseFloat(a.value) * parseFloat(b.value);
+        }
+        function chia() {
+            a = document.getElementById("a");
+            b = document.getElementById("b");
+            div = document.getElementById("ket_qua");
+            div.value = parseFloat(a.value) / parseFloat(b.value);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="number" id="a"/> <br/>
+    <input type="number" id="b"/> <br/>
+    <input type="number" id="ket_qua"/> <br/>
+    <button onclick="cong()">+</button>
+    <button onclick="tru()">-</button>
+    <button onclick="nhan()">x</button>
+    <button onclick="chia()">/</button>
+</body>
+
+</html>
